@@ -1,0 +1,18 @@
+if (true) {
+    var x = 10;
+}
+
+console.log(x);
+
+// if (true) {
+//     let y = 10;
+// }
+// console.log(y);
+
+var a = 10;
+
+console.log(a);
+
+let b = 10;
+b= 20;
+console.log(b);
