@@ -45,7 +45,7 @@ function render(users) {
 
 async function run() {
     try {
-        btn.disabled = true;
+        btn.disabled = true;    //버튼 클릭 막기
         status.textContent = "로딩 중...";
         list.innerHTML = "";
         
@@ -57,9 +57,10 @@ async function run() {
     } catch(e) {
         status.textContent = "데이터 불러오기 실패";
     } finally {
-        btn.disabled = false;
+        btn.disabled = false;   //다시 활성화
     }
 }
+//버튼 막기 -> 로딩 표시 -> 데이터 기다림 -> 화면 출력 -> 버튼 다시 풀기
 
 //검색 기능
 search.addEventListener("input", () => {
